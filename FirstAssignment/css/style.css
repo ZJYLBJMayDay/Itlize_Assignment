@@ -1,0 +1,107 @@
+/* Clear the margin and padding of all tags */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Center the body horizontally */
+.bodyContent {
+    position: relative;
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+caption {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+/* Make the value of the first column to the right */
+tr td:nth-child(1) {
+    text-align: right;
+}
+/* Make the value of the second column to the left */
+tr td:nth-child(2) {
+    text-align: left;
+}
+
+tbody {    
+    border: 10px solid #FFFF33;
+    background-color:#ffffcc;
+}
+/* There is a margin between each box */
+tr {
+    height: 30px;
+}
+
+td {
+    height: 30px;
+}
+
+/* submit style */
+.footDiv {
+    margin: 5px;
+    text-align: left;
+}
+
+select {
+    width: 30%;
+}
+
+/* set range left style */
+.leftSpan {
+    display: inline-block;
+    width: 15%;
+    background-color: #990000;
+    text-align: center;
+    color: #fff;
+}
+/* set range right style */
+.rightSpan {
+    display: inline-block;
+    width: 15%;
+    background-color: #660099;
+    text-align: center;
+    color: #fff;
+}
+/* let address move to top */
+.addressMoveToTop {
+    vertical-align: top;
+}
+
+/* first box legend */
+.firstLegend {
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    background-color: white;
+}
+/* second box legend */
+.secondLegend {
+    position: absolute;
+    top: 22%;
+    left: 3%;
+    background-color: white;
+}
+/* third box legend */
+.thirdLegend {
+    position: absolute;
+    top: 54%;
+    left: 3%;
+    background-color: white;
+}
+/* fourth box legend */
+.fourthLegend {
+    position: absolute;
+    top: 68%;
+    left: 3%;
+    background-color: white;
+}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function Hero(name, occupation) {
+            this.name = name;
+            this.occupation = occupation;
+        }
+
+        Hero.prototype.whoAreYou = function () {
+            return `My name is ${this.name} and I am a ${this.occupation}.`
+        }
+
+        let hero = new Hero('Garen', '111');
+        alert(hero.whoAreYou())
+    </script>
+</body>
+</html>
