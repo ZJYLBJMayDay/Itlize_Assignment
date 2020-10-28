@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let student = {
+            name:"David Rayy",
+            sclass:"VI",
+            rollno:12
+        };
+        //print object result 
+        function displayObject(s){
+            let res = "";
+            for (let i in s) {
+                res += i + ":" + s[i] + ";"+"</br>";          
+            }
+            return res;            
+        }
+        document.write('Before delete:' + '</br>')
+        document.write(displayObject(student)+'</br>');
+        delete student.rollno ;
+        document.write('After delete:' + '</br>')
+        document.write(displayObject(student) +'</br>');
+
+        //count of properties using Enumeration
+        function countProperties(s){
+　　        var count = 0;
+               for(var i in s){
+                    if(s.hasOwnProperty(i)){
+                        count++;
+                    }
+                }
+            return count;
+        }
+        var len1 = countProperties(student);
+        document.write('count of properties using Enumeration:' + len1 + '</br>');
+
+        //count of properties using Object.keys()
+        var arr = Object.keys(student)
+        var len2 = arr.length
+        document.write('count of properties using Object.keys():' + len2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
