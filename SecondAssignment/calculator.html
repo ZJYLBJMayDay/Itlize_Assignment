@@ -7,24 +7,25 @@
 </head>
 <body>
     <script>
+        // Calculate constructor
         function Calculator() {
             this.read = function() {
                 this.a = Number(prompt('a?', 0));
                 this.b = Number(prompt('b?', 0));
             }
 
+            //sum function
             this.sum = function() {
                 return this.a + this.b;
             };
-
+            //mul function
             this.mul = function() {
                 return this.a * this.b;
             };
         }    
-
+        // new object
         let calculator = new Calculator();
         calculator.read()
-
         alert(calculator.sum());
         alert(calculator.mul());
     </script>

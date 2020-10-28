@@ -8,17 +8,20 @@
 <body>
     
     <script>
+        //Hero constructor passes two parameters
         function Hero(name, occupation) {
             this.name = name;
             this.occupation = occupation;
         }
-
-        Hero.prototype.whoAreYou = function () {
+        //use Hero.prototype to add a method whoAreYou
+        Hero.prototype.whoAreYou = function () {       
+            console.log(this.name, this.occupation);
             return `My name is ${this.name} and I am a ${this.occupation}.`
         }
-
-        let hero = new Hero('Garen', '111');
-        alert(hero.whoAreYou())
+        //Use the Hero constructor to create an object hero1 with the name Michaelangello and occupation Ninja.
+        let hero1 = new Hero('Michaelangello', 'Ninja');
+        //Use the whoAreYou method to log to the console hero1's name and occupation.
+        hero1.whoAreYou();
     </script>
 </body>
 </html>
